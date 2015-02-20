@@ -41,3 +41,10 @@ tidydata<-aggregate(data[,-c(80,81)],by=list(activity=data$activity,subject=data
 
 #create the tidydata file
 write.table(tidydata, "tidydata.txt",row.name=FALSE)
+
+#For each record in the dataset it is provided: 
+## The activity carried out
+## An identifier of the subject who carried out the experiment.
+## Standard and mean of the Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
+## Standard and mean of the Triaxial Angular velocity from the gyroscope. 
+
